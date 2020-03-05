@@ -1,0 +1,19 @@
+{
+  "name": "node_milight_api",
+  "version": "1.0.0",
+  "description": "MiLight API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "node-milight-promise": "^0.3.2",
+    "nodemon": "^2.0.2"
+  }
+}
