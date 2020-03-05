@@ -102,7 +102,7 @@ You can now trigger the light with your voice !
 - [NPM](https://www.npmjs.com/get-npm)
 - [node-milight-promise](https://github.com/mwittig/node-milight-promise) by Marcus Wittig
 
-##License
+## License
 
 Copyright (c) 2020, Yannick Burkard and contributors. All rights reserved.
 
