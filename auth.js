@@ -1,9 +1,7 @@
 const config = require('./config');
 
 module.exports = (req, res, next) => {
-    console.log(req.body.auth);
     try {
-        console.log(req.body.auth);
         if (req.body.auth == config.authToken){
             next();
         }
