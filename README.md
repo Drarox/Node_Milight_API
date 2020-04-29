@@ -57,23 +57,20 @@ I recommend to install the node server on raspberry or on a server with docker f
 If you are one a raspberry, just open the port 3000 on your router for the raspberry or whatever port you configured your server.
 
 #### Docker deployment
-For a docker installation, I personally use the official [docker-node](https://github.com/nodejs/docker-node) image, you can use the following docker-compose.yml :
+For a docker installation, I personally use the official [docker-node](https://github.com/nodejs/docker-node) image, you can use the following docker-compose :
  ```yml
- version: "2"
- services:
-   node:
-     image: "node:8"
-     container_name: milight
-     restart: unless-stopped
-     user: "node"
-     working_dir: /home/node/app
-     environment:
-       - NODE_ENV=production
-     volumes:
-       - /path/on/host:/home/node/app
-     ports:
-       - "3000:3000"
-     command: "npm start"
+node:
+  image: node:lts
+  user: "node"
+  working_dir: /home/node/app
+  environment:
+    - NODE_ENV=production
+  volumes:
+    - /path/on/host:/home/node/app
+  ports:
+    - "3000:3000"
+  net: bridge
+  command: "npm start"
  ```
 #### Server security
 
